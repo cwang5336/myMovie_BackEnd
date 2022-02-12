@@ -7,7 +7,7 @@ const compression = require("compression");
 const bodyParser = require("body-parser"); 
 const db = require("./db"); 
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
     console.log("server from port 5000");  //server running on port 5000
 });
 

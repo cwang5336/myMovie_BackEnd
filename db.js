@@ -78,6 +78,7 @@ const login = async (req, res) => {  //validates user with users table
 
 //movie table functions//
 
+
 //add a movie  //CONNECTED WITH JOINT
 const addMovie = async (req, res) => {
     try {
