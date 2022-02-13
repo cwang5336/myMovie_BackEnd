@@ -5,7 +5,6 @@ const pool = new Pool({
   Password: "cd2229bf6bb4dab2d170a236ceabf6693d9cb7ab1d7d85304e4732e99662948f", 
   Host: "ec2-34-205-46-149.compute-1.amazonaws.com",
   Database: "de3i1qjcqnaunj",
-  ssl: true
 });
 
  
