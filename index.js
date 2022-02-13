@@ -6,8 +6,8 @@ const { json } = require("express");
 const compression = require("compression"); 
 const bodyParser = require("body-parser"); 
 const db = require("./db"); 
-
-app.listen(process.env.PORT || 5000, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
     console.log("server from port 5000");  //server running on port 5000
 });
 
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 
  app.get("/", (req, res) => {
-     res.json({ info: "Node.js, Express, and Postgres API" });
+     res.send("hi");
  });
 
 //signup routes / login routes
