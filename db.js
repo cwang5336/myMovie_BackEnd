@@ -1,6 +1,12 @@
 const Pool = require("pg").Pool;
+const DATABASE_URL = "postgres://avtzxcqvqboxyy:cd2229bf6bb4dab2d170a236ceabf6693d9cb7ab1d7d85304e4732e99662948f@ec2-34-205-46-149.compute-1.amazonaws.com:5432/de3i1qjcqnaunj";
+
 
 const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  },
   User: "avtzxcqvqboxyy",
   Password: "cd2229bf6bb4dab2d170a236ceabf6693d9cb7ab1d7d85304e4732e99662948f", 
   Host: "ec2-34-205-46-149.compute-1.amazonaws.com",
