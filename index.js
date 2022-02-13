@@ -19,9 +19,9 @@ app.use(compression());
 app.use(bodyParser.json()); 
 
 
-app.get("/", (req, res) => {
-    response.json({ info: "Node.js, Express, and Postgres API" });
-});
+// app.get("/", (req, res) => {
+//     response.json({ info: "Node.js, Express, and Postgres API" });
+// });
 
 //signup routes / login routes
 
